@@ -131,11 +131,7 @@ BOARD_USES_QCOM_HARDWARE := true
 
 # Recovery
 BOARD_USES_FULL_RECOVERY_IMAGE := true
-ifeq ($(PRODUCT_FULL_TREBLE_OVERRIDE), true)
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab_legacy.qcom
-else
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
-endif
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_motorola
 
 # Releasetools
